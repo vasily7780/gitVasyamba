@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>васямбр-поцц</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>   <link href="https://fonts.googleapis.com/css2? family=Roboto+Condensed:ital,wght@1,400;1,700 & family= Roboto:ital,wght@1,100;1,400 & display=swap" rel="stylesheet">
+	<style type="text/css">
+		html, body{
+			height: 100%;
+			font-family: Roboto;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+		h1{color: red;}
+		h2{color: green;}
+		h3{color: blue;}
+		
+		
+	</style>
+	<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("countdown").innerHTML = days + " ночей " + hours + " часиков "
+  + minutes + " минуточек " + seconds + " секундищЪ" ;
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("countdown").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+</head>
+<body>
+	<h1>ВАСЯМБР-ПОЦЦ</h1>
+    <h2>я только учусь создавать сайты</h2>
+     <h2>и поэтому сейчас сайт находится в разработке </h2>
+     <h2>и будет доступен через</h2> 
+    <h2><span id="countdown"></span></h2>
+    <h3>вы можете связаться со мной</h3>
+    <div>телефон: 89658123834</div>
+<div><a href="https://t.me/Wellfree" target="-blank">моя телега</a></div>
+<div> <a href="mailto:vasily7780@yandex.ru" target="-blank"> ну и почта</a> </div>
+</body>
+</html>
